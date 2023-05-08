@@ -1,3 +1,8 @@
+window.addEventListener('load', function() {
+    document.getElementById('loading').style.display = 'none';
+  });
+
+
 var $owl = $('.owl-carousel');
 
 $owl.owlCarousel({
@@ -72,6 +77,16 @@ swiper.on('slideChange', function () {
         $('.prev').removeClass('disabled');
     }
 });
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) { 
+      $('.second-header').addClass('active');
+    } else {
+      $('.second-header').removeClass('active');
+    }
+  });
+              
 
 
 

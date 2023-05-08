@@ -17,12 +17,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="./assets/css/Index.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
 
   <title>Document</title>
 </head>
 
 <body style="background-color: rgb(0,0,0);">
+
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+
+
+
   <header class="d-none d-lg-block d-md-block">
     <div class="container">
       <div class="row">
@@ -50,6 +57,34 @@
           </ul>
         </div>
 
+      </div>
+    </div>
+  </header>
+  <header class="d-none d-lg-block d-md-block fixed-top second-header">
+    <div class="container">
+      <div class="row">
+        <div class="menu-nav col-4">
+          <ul>
+            <li><a href="#">Gaming Accessories</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+        <div class="menu-right col-8">
+          <div class="logo"> <a href=""> <img src="assets/images/./logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png" alt=""></a>
+          </div>
+          <ul class="icons">
+            <li class="account"><a href=""><i class="fa-regular fa-user"></i></a></li>
+            <li class="wish-list"><a href=""><i class="fa-regular fa-heart"><span class="wish-count">0</span></i></a>
+            </li>
+            <li class="my-cart">
+              My Cart <br>
+              <b>0.00 <span>USD</span></b>
+            </li>
+            <li class="basket"><i class="fa-solid fa-cart-shopping"></i> <span class="basket-count">0</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -101,15 +136,15 @@
   <!-- End -->
 
 
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
   <!-- Products -->
 
   <!-- Start -->
   <section id="Products">
     <div class="container">
 
-      <div class="bg"></div>
-      <div class="bg bg2"></div>
-      <div class="bg bg3"></div>
 
       <div class="row">
         <div class="bestsellers">
@@ -622,14 +657,14 @@
                   <div style="color: white;" class="carts">
                     console
                   </div>
-                  <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                  <h4>Nintendo Switch Lite - Turquoise</h4>
                   <div style="color: white;" class="product-type">
                     TYPE:
                     <p>
                     </p>
                   </div>
                   <div class="product-title">
-                    <p style="color: white;">Multiple connectivity options including HDMI, USB ports & RGB fans let you
+                    <p>Multiple connectivity options including HDMI, USB ports & RGB fans let you
                       connect a variety of peripherals easily. Wi-Fi Ready – Connect to the internet wirelessly with
                       ease. Preloaded with Windows 10 64-bit OS for enhanced productivity and multitasking.</p>
                   </div>
@@ -659,32 +694,32 @@
           <div class="hr col-xl-3 col-lg-4 col-sm-6 col-12">
             <div class="item">
               <div style="padding: 20px;" class="product-card-image-type">
-  
-                <div style="color: white;" class="carts">
+
+                <div style="color: white; font-size: small;" class="carts">
                   console
                 </div>
-                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                <h4>Nintendo Switch Lite - Turquoise</h4>
                 <div style="color: white;" class="product-type">
                   TYPE:
                   <p>
                   </p>
                 </div>
                 <div class="product-title">
-                  <p style="color: white;">Multiple connectivity options including HDMI, USB ports & RGB fans let you
+                  <p>Multiple connectivity options including HDMI, USB ports & RGB fans let you
                     connect a variety of peripherals easily. Wi-Fi Ready – Connect to the internet wirelessly with ease.
                     Preloaded with Windows 10 64-bit OS for enhanced productivity and multitasking.</p>
                 </div>
-  
+
                 <span style="color: white;">458,56 <sup>usd</sup></span>
-  
+
               </div>
-  
+
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6 col-12 ">
             <img src="./assets/images/Products/full-width-bluthhoth-dd.webp" alt="">
           </div>
-  
+
         </div>
       </div>
 
@@ -700,8 +735,8 @@
       <div class="row">
         <div class="col-xl-3 col-md-3 col-sm-6 col-12">
           <div class="about-us-box">
-            <h3 class="h2">01</h3>
-            <h4 class="h3">Gift boxes</h4>
+            <h3>01</h3>
+            <h4>Gift boxes</h4>
             <p>Finished products products and gift wrapping</p>
           </div>
         </div>
@@ -731,6 +766,180 @@
     </div>
 
   </section>
+
+
+
+
+
+  <section id="Slik-slider">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Best <br> <span>Pro Gaming</span> Products</h2>
+        <span style="color: gray;">More powerful hardware not only betters their experiences in games they're currently
+          playing,<br> but it also gives many players access to titles with more demanding specifications.</span>
+      </div>
+      <div class="owl-carousel products-item">
+        <div class="item">
+          <a style="text-decoration: none;" href="">
+            <div style="padding: 20px;" class="product-card-image-type">
+  
+              <div style="color: white;" class="carts">
+                console
+              </div>
+              <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+              <div style="color: white;" class="product-type">
+                TYPE:
+                <p>
+                </p>
+              </div>
+              <div class="product-images">
+                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+              </div>
+  
+  
+              <span style="color: white;">458,56 <sup>usd</sup></span>
+  
+            </div>
+          </a>
+  
+        </div>
+        <div class="item">
+          <a style="text-decoration: none;" href="">
+            <div style="padding: 20px;" class="product-card-image-type">
+  
+              <div style="color: white;" class="carts">
+                console
+              </div>
+              <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+              <div style="color: white;" class="product-type">
+                TYPE:
+                <p>
+                </p>
+              </div>
+              <div class="product-images">
+                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+              </div>
+  
+              <span style="color: white;">458,56 <sup>usd</sup></span>
+  
+            </div>
+          </a>
+  
+        </div>
+        <div class="item">
+          <a style="text-decoration: none;" href="">
+            <div style="padding: 20px;" class="product-card-image-type">
+  
+              <div style="color: white;" class="carts">
+                console
+              </div>
+              <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+              <div style="color: white;" class="product-type">
+                TYPE:
+                <p>
+                </p>
+              </div>
+              <div class="product-images">
+                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+              </div>
+  
+              <span style="color: white;">458,56 <sup>usd</sup></span>
+  
+            </div>
+          </a>
+  
+        </div>
+        <div class="item">
+          <a style="text-decoration: none;" href="">
+            <div style="padding: 20px;" class="product-card-image-type">
+  
+              <div style="color: white;" class="carts">
+                console
+              </div>
+              <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+              <div style="color: white;" class="product-type">
+                TYPE:
+                <p>
+                </p>
+              </div>
+              <div class="product-images">
+                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+              </div>
+  
+              <span style="color: white;">458,56 <sup>usd</sup></span>
+  
+            </div>
+          </a>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+<footer>
+  <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="footer-logo-title">
+              <div class="logo">
+                <img src="./assets/images/logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png" alt="">
+              </div>
+              <h4>Reach out & let your <b>mind explore</b></h4>
+              <p>Enjoy browsing our page</p>
+            <span >© 2023,Gaming WorkDo,Powered by Shopify</span>
+              
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="navigation">
+              <h6>NAVIGATION:</h6>
+            <ul>
+              <li>Search</li>
+              <li>All Products</li>
+              <li> Article Page</li>
+             
+            </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+           <div class="about">
+            <h6>ABOUT US:</h6>
+            <ul>
+              <li>About Us</li>
+              <li>Contact with us</li>
+              <li>FAQ's</li>
+              <li> Shipping & Delivery</li>
+              <li>Privacy Policy</li>
+            </ul>
+           </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+               <h6 style="color: white;">SHARE:</h6>
+               <div class="icons">
+                <div class="youtube margin">
+                  <i class="fa-brands fa-square-youtube"></i>
+                </div>
+              <div class="messenger margin">
+                <i class="fa-brands fa-facebook-messenger"></i>
+              </div>
+               <div class="instagram margin">
+                <i class="fa-brands fa-instagram"></i>
+               </div>
+                <div class="twitter margin">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+               </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
