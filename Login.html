@@ -80,55 +80,60 @@
   </header>
 
   <section id="Login">
-          
+    <div class="container">
+      <div class="row">
+       <div class="col-12">
         <h1>Log In</h1>
 
-    <div class="login-wrapper">
-      <div class="login">
-        <p><b>Log In</b></p>
-      </div>
+        <div class="login-wrapper">
+          <div class="login">
+            <p><b>Log In</b></p>
+          </div>
 
-      <div class="email-password">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <p>I am a returning customer</p>
-            </div>
-            <div class="email col-lg-6">
-              <div id="Email">
-                <label for="Email">Email:</label><br>
-                <input class="form-control" type="email" name="customer[email]" id="CustomerEmail" autocomplete="email"
-                  autocorrect="off" autocapitalize="off" placeholder="Email">
+          <div class="email-password">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <p>I am a returning customer</p>
+                </div>
+                <div class="email col-lg-6 col-md-6 col-12">
+                  <div id="Email">
+                    <label for="Email">Email:</label><br>
+                    <input class="form-control" type="email" name="customer[email]" id="CustomerEmail"
+                      autocomplete="email" autocorrect="off" autocapitalize="off" placeholder="Email">
+                  </div>
+                </div>
+                <div class="password col-lg-6 col-md-6 col-12">
+                  <label for="password">password:</label><br>
+                  <input class="form-control" type="password" value="" name="customer[password]" id="CustomerPassword"
+                    autocomplete="current-password" placeholder="Password">
+                </div>
               </div>
             </div>
-            <div class="password col-lg-6">
-              <label for="password">password:</label><br>
-              <input class="form-control" type="password" value="" name="customer[password]" id="CustomerPassword"
-                autocomplete="current-password" placeholder="Password">
+          </div>
+
+          <div class="forget-button-pass" style="border-bottom: 1px solid rgb(192, 192, 192);">
+            <div class="container">
+              <div class="forget-button ">
+                <div class="forget">
+                  <a href="" class="forget-pass">Forgot Password?
+                  </a>
+                </div>
+                <div class="button-login">
+                  <button class="loginn btn btn-primary">Login <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+          <div class="register">
+            <span>If you dont have account</span>
+            <button class="btn btn-primary">Register <i class="fa-solid fa-arrow-right"></i></button>
 
-      <div style="border-bottom: 1px solid rgb(192, 192, 192);">
-        <div class="container">
-          <div class="forget-button d-flex align-items-end">
-            <div class="forget">
-              <a href="" class="forget-pass">Forgot Password?
-              </a>
-            </div>
-            <div class="button-login">
-              <button class="loginn btn btn-primary">Login <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
           </div>
-        </div>
-      </div>
-       <div class="register">
-        <span>If you dont have account</span>
-        <button class="btn btn-primary">Register <i class="fa-solid fa-arrow-right"></i></button>
 
+        </div>
        </div>
-
+      </div>
     </div>
 
 
