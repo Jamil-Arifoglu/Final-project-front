@@ -1,0 +1,215 @@
+#Detalik-section {
+  .product-information {
+    .category-wishlist {
+
+
+      .category {
+        display: inline-block;
+        border-radius: 5px;
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        background: rgb(49, 60, 204);
+        background: linear-gradient(90deg, rgba(19, 111, 250, 0.418) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+
+        span {
+          color: #ffffff;
+        }
+
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 20px;
+        margin-left: 30px;
+        color: white;
+        text-decoration: none;
+
+        i {
+          margin-right: 10px;
+        }
+      }
+
+    }
+
+    .name-description {
+      .icons-star {
+        color: white;
+      }
+
+      .name {
+        color: white;
+      }
+
+      .sku {
+        color: white;
+      
+        ul{
+          padding: 0;
+          li{
+            list-style: none;
+          }
+        }
+      }
+
+      .description {
+        color: white;
+      }
+    }
+    .product-select{
+      margin-top: 50px;
+      select{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 500px;
+        height: 40px;
+        background-color: #000;
+        color: gray;
+      
+      }
+    }
+
+    .price-quantity {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      .price {
+        color: white;
+      }
+
+      .quantity {}
+
+      .add-buy {
+        .add {}
+
+        .buy {}
+      }
+    }
+  }
+}
+
+
+@mixin target-ie {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+body {
+background-color: green;
+}
+
+
+.ga-vertical-gallery {
+
+   .services-slider {
+        display: flex;
+      }
+
+    .slider-main {
+      width: 100%;
+      text-align: -webkit-center;
+        div{
+          img{
+            width:503px;
+            height:505px;
+          }
+      }
+    }
+    
+    .main-container {
+      width: 100%;
+     
+    }
+    
+    .nav-container {
+      height: 505px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      @include target-ie{
+        width:100%;
+        height:100%;
+      }
+      i.fa{
+        text-align:center;
+      }
+      .slider-nav.slick-initialized.slick-slider.slick-vertical {
+        //border: 1px dotted;
+        height: 485px!important;
+        // height: 505px!important;
+          @include target-ie{
+            height:inherit;
+            height:100%;
+          }
+       
+      }
+      img {
+      max-height: 135px;
+      height: 63px;
+      width: 76px;
+      }
+      .slick-current {
+        img{
+        box-shadow: 0 0 4px 2px rgba(108, 232, 220, 0.9);
+        }
+      }
+      .slick-slide {
+        max-height: 135px;
+        margin-bottom: 18px;
+        
+      }
+    }
+    .slick-slide.slick-current.slick-active {
+      width: 100%!important;
+    }
+
+    .slider-nav.slick-initialized.slick-slider.slick-vertical {
+        display: flex!important;
+        flex-direction: column-reverse;
+        text-align:center;
+        text-align: -webkit-center;
+        height:100%;
+        justify-content: center;
+  
+  
+        @media screen and (min-width: 62em) {
+            justify-content: flex-start;
+    
+        }
+          
+
+
+    }
+    .slick-next,.slick-prev {
+        position:relative;
+        top:unset;
+        @include target-ie{
+          top:0px;
+        }
+        color: #fc7a22;
+      
+        
+      
+        height:unset;
+        &:before{
+          
+          color:transparent;
+        }
+    }
+    .slick-next{
+        right:unset;
+        @include target-ie{
+          right:0px;
+        }
+        transform: rotate(-90deg);
+    }
+    .slick-prev {
+        left:unset;
+        @include target-ie{
+          left:0px;
+        }
+        transform: rotate(90deg);
+    }
+  
+}

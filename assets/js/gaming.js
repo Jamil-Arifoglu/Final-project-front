@@ -8,6 +8,7 @@ var $owl = $('.owl-carousel');
 $owl.owlCarousel({
   center: true,
   loop: true,
+
   items: 5,
   nav: true,
   navText: ['<', '>'],
