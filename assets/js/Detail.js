@@ -112,6 +112,37 @@ jQuery(document).ready( function($) {
 });
 
 
+var $owl = $(".owl-carousel");
+
+$owl.owlCarousel({
+  center: true,
+  loop: true,
+
+  items: 5,
+  nav: true,
+  navText: ["<", ">"],
+  //autoplay: true
+  responsive: {
+    0: {
+      items: 1,
+      margin: 1,
+    },
+    640: {
+      items: 2,
+      margin: 3,
+    },
+    820: {
+      items: 2,
+      margin: 2,
+    },
+    1000: {
+      items: 4,
+      margin: 3,
+    },
+  },
+});
+
+
 
 
 

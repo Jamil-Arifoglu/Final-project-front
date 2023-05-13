@@ -10,9 +10,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <title>Detail</title>
 </head>
@@ -26,12 +29,12 @@
   <section id="Detalik-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-6 col-12">
           <div class="product-information">
             <div class="category-wishlist">
-             <div class="category">
-              <span>Category</span>
-             </div>
+              <div class="category">
+                <span>Category</span>
+              </div>
               <a href=""><i class="fa-regular fa-heart"></i>Add To Wishlist</a>
             </div>
             <div class="name-description">
@@ -70,15 +73,16 @@
             </div>
             <div class="price-quantity">
               <div class="price">
-                <h3>345.0 <sup>usd</sup></h3>
+                <h3>345.00<sup>USD</sup></h3>
                 <span class="price-item--sale">
-  
-                  500.00 <span class="currency-type">USD</span>
-                
-              </span>
+
+                  <del>500.00</del> <sup class="currency-type">USD</sup>
+
+                </span>
               </div>
               <div class="quantity">
-                <button style="background-color:black; height: 40px; width: 50px;" class="quantity__button no-js-hidden quantity-decrement " name="minus" type="button">
+                <button style="background-color:black; height: 40px; width: 50px;"
+                  class="quantity__button no-js-hidden quantity-decrement " name="minus" type="button">
                   <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0.251343V1.74871H12V0.251343H0Z" fill="#61AFB3"></path>
                   </svg>
@@ -86,7 +90,8 @@
                 <input class="quantity__input" type="number" name="quantity"
                   id="Quantity-template--17223997915457__main" min="1" value="1"
                   form="product-form-template--17223997915457__main">
-                <button  style="background-color:rgba(22, 98, 148, 0.582); height: 40px; width: 50px;" class="quantity__button no-js-hidden quantity-increment" name="plus" type="button">
+                <button style="background-color:rgba(22, 98, 148, 0.582); height: 40px; width: 50px;"
+                  class="quantity__button no-js-hidden quantity-increment" name="plus" type="button">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.74868 5.25132V0H5.25132V5.25132H0V6.74868H5.25132V12H6.74868V6.74868H12V5.25132H6.74868Z"
@@ -96,17 +101,17 @@
               </div>
             </div>
             <div class="add-buy">
-              <button class="add">Add To Cart</button>
-              <button class="buy">Buy it new</button>
+              <div class="add btn btn-primary">Add To Cart</div>
+              <div class="buy btn btn-primary">Buy it new</div>
             </div>
           </div>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-6 col-12">
           <div class="row">
             <div class="vertical-slider col-12 ga-vertical-gallery" id="slider">
               <section class="services-slider">
-                 <div class="nav-container">
-                 <i class="fa fa-angle-up next">next</i>
+                <div class="nav-container">
+                  <i class="fa fa-angle-up next"></i>
                   <div class="slider-nav">
                     <div>
                       <img src="./assets/images/Products/8317.png_860.png">
@@ -127,7 +132,7 @@
                       <img src="https://via.placeholder.com/600x600/F3FF33">
                     </div>
                   </div>
-                  <i class="fa fa-angle-down prev ">prev</i>
+                  <i class="fa fa-angle-down prev "></i>
                 </div>
                 <div class="main-container">
                   <div class="slider slider-main">
@@ -151,11 +156,159 @@
                     </div>
                   </div>
                 </div>
-               
+
               </section>
-              </div>
+            </div>
           </div>
 
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="Product-description">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-12">
+          <div class="pro-descrip-left">
+            <h3>Description:</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+        <div class="col-md-7 col-12">
+          <img src="//gaming-workdo.myshopify.com/cdn/shop/files/1233588.png?v=1671797552" class="pro-img" alt="image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="Peoduct-tab">
+    <div class="full-container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 tab-left">
+          <div class="left-image">
+            <img src="./assets/images/Products/product-cpu-ss.webp" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 tab-center"></div>
+        <div class="col-lg-4 col-md-6 col-12 tab-right">
+          <div class="right-image">
+            <img src="./assets/images/Products/double.cpu-ss.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="Slider-product">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Best <br> <span>Pro Gaming</span> Products</h2>
+          <span style="color: gray;">More powerful hardware not only betters their experiences in games they're currently
+            playing,<br> but it also gives many players access to titles with more demanding specifications.</span>
+        </div>
+        <div class="owl-carousel products-item">
+          <div class="item">
+            <a style="text-decoration: none;" href="">
+              <div style="padding: 20px;" class="product-card-image-type">
+    
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <div class="product-images">
+                  <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                </div>
+    
+    
+                <span style="color: white;">458,56 <sup>usd</sup></span>
+    
+              </div>
+            </a>
+    
+          </div>
+          <div class="item">
+            <a style="text-decoration: none;" href="">
+              <div style="padding: 20px;" class="product-card-image-type">
+    
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <div class="product-images">
+                  <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                </div>
+    
+                <span style="color: white;">458,56 <sup>usd</sup></span>
+    
+              </div>
+            </a>
+    
+          </div>
+          <div class="item">
+            <a style="text-decoration: none;" href="">
+              <div style="padding: 20px;" class="product-card-image-type">
+    
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <div class="product-images">
+                  <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                </div>
+    
+                <span style="color: white;">458,56 <sup>usd</sup></span>
+    
+              </div>
+            </a>
+    
+          </div>
+          <div class="item">
+            <a style="text-decoration: none;" href="">
+              <div style="padding: 20px;" class="product-card-image-type">
+    
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <div class="product-images">
+                  <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                </div>
+    
+                <span style="color: white;">458,56 <sup>usd</sup></span>
+    
+              </div>
+            </a>
+    
+          </div>
         </div>
       </div>
     </div>
@@ -222,6 +375,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="./assets/js/Detail.js"></script>
 </body>
 

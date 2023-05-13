@@ -1,0 +1,29 @@
+#Wishlist-Name{
+    .name{
+        h1{
+            background: rgb(26, 34, 150);
+            background: linear-gradient(75deg, rgb(46, 16, 85) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .description{
+        width: 600px;
+        p{
+            color: gray;
+        }
+    }
+}
+
+
+
+
+
+#Wishlist{
+    
+    height: 200px;
+
+    background-color: white;
+    .wishlist{
+    }
+}

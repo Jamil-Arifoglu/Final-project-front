@@ -1806,6 +1806,12 @@ footer .footer .icons :hover i {
     margin-left: 5px;
   }
 }
+#Detalik-section {
+  padding: 100px 0 100px 0;
+}
+#Detalik-section .product-information {
+  padding: 0 120px 0 0;
+}
 #Detalik-section .product-information .category-wishlist .category {
   display: inline-block;
   border-radius: 5px;
@@ -1866,8 +1872,72 @@ footer .footer .icons :hover i {
 #Detalik-section .product-information .price-quantity .price {
   color: white;
 }
-body {
-  background-color: green;
+#Detalik-section .product-information .add-buy .add {
+  margin-right: 20px;
+  width: 200px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: rgb(49, 60, 204);
+  background: linear-gradient(90deg, rgb(19, 111, 250) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+}
+#Detalik-section .product-information .add-buy .buy {
+  width: 200px;
+  border: 1px solid gray;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: rgb(49, 60, 204);
+  background: linear-gradient(90deg, rgb(19, 111, 250) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+}
+#Detalik-section .product-information .add-buy :hover {
+  background: rgb(49, 60, 204);
+  background: linear-gradient(90deg, rgba(19, 111, 250, 0) 0%, rgba(42, 26, 184, 0) 35%, rgba(111, 0, 119, 0) 100%);
+  color: gray;
+  border-color: gray;
+}
+
+#Product-description {
+  padding: 100px 0 100px 0;
+  background-color: white;
+}
+
+#Slider-product .item {
+  background-color: rgba(0, 0, 255, 0.123);
+  border-left: 2px solid rgba(68, 0, 255, 0.671);
+  border-right: 2px solid rgba(68, 0, 255, 0.671);
+  border-radius: 30px;
+}
+#Slider-product .owl-item > div {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.4s ease;
+}
+#Slider-product .owl-item:not(.center) > div {
+  opacity: 0.5;
+}
+#Slider-product .owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+}
+#Slider-product .owl-nav {
+  position: relative;
+}
+#Slider-product .owl-nav .owl-prev {
+  border-radius: 50%;
+  background-color: white;
+  background-image: url("back.png");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+}
+#Slider-product .owl-nav .owl-next {
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  background-image: url("next.png");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  right: 0;
 }
 
 .ga-vertical-gallery .services-slider {
@@ -1967,4 +2037,125 @@ body {
   .ga-vertical-gallery .slick-prev {
     left: 0px;
   }
+}
+
+#Wishlist-Name .name h1 {
+  background: rgb(26, 34, 150);
+  background: linear-gradient(75deg, rgb(46, 16, 85) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#Wishlist-Name .description {
+  width: 600px;
+}
+#Wishlist-Name .description p {
+  color: gray;
+}
+
+#Wishlist {
+  height: 200px;
+  background-color: white;
+}
+#Contact-description {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+#Contact-description .contact-desc .contact-name h1 {
+  background: rgb(50, 15, 114);
+  background: linear-gradient(90deg, rgb(52, 113, 245) 0%, rgb(25, 41, 190) 35%, rgb(69, 10, 73) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#Contact-description .contact-desc .description {
+  width: 482px;
+}
+#Contact-description .contact-desc .description p {
+  color: white;
+}
+
+#Contact-address-form {
+  background-color: rgb(255, 255, 255);
+  height: 600px;
+  padding: 100px 0 0 0;
+  position: relative;
+}
+#Contact-address-form li {
+  list-style: none;
+  color: gray;
+}
+#Contact-address-form h5 {
+  color: gray;
+}
+#Contact-address-form .contact-title-form {
+  position: absolute;
+  top: -150px;
+  width: 650px;
+  z-index: 1;
+}
+#Contact-address-form .contact-title-form .contact-title {
+  margin-bottom: 50px;
+}
+#Contact-address-form .contact-title-form .contact-title h1 {
+  background: rgb(50, 15, 114);
+  background: linear-gradient(90deg, rgb(52, 113, 245) 0%, rgb(25, 41, 190) 35%, rgb(69, 10, 73) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#Contact-address-form .contact-title-form .contact-form {
+  height: 600px;
+  padding: 0px 20px;
+  border: 2px solid #7b35c8;
+  background: #fff;
+}
+#Contact-address-form .contact-title-form .contact-form .form-group {
+  margin-top: 30px;
+}
+#Contact-address-form .contact-title-form .contact-form .form-group label {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 10px;
+}
+#Contact-address-form .contact-title-form .contact-form .form-group .form-control {
+  position: relative;
+  border: 1px solid gray;
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 13px;
+  line-height: 1;
+  border-radius: 0px 20px 0px 20px;
+  color: gray;
+}
+#Contact-address-form .contact-title-form .contact-form .form-group textarea {
+  resize: none;
+}
+#Contact-address-form .btn {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-top: 30px;
+  background: rgb(49, 60, 204);
+  background: linear-gradient(90deg, rgb(19, 111, 250) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+  color: white;
+  width: 200px;
+  height: 50px;
+}
+
+#Collections {
+  background-color: white;
+}
+#Collections .section-name {
+  text-align: center;
+  padding: 40px 0;
+}
+#Collections .section-name h1 {
+  color: grey;
+  font-size: 70px;
+}
+#Collections .card-wrapperr .card-content {
+  width: 371px;
+}
+#Collections .card-wrapperr .card-content h5 {
+  text-align: center;
+  font-size: 30px;
+  color: grey;
 }/*# sourceMappingURL=main.css.map */

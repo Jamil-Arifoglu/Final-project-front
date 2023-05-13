@@ -1,7 +1,8 @@
 #Detalik-section {
+  padding: 100px 0 100px 0;
   .product-information {
+    padding: 0 120px 0 0;
     .category-wishlist {
-
 
       .category {
         display: inline-block;
@@ -77,27 +78,110 @@
       .price {
         color: white;
       }
+      
 
-      .quantity {}
-
-      .add-buy {
-        .add {}
-
-        .buy {}
-      }
+      .quantity{}
     }
+    
+          .add-buy {
+           
+            .add {
+              margin-right: 20px;
+              width: 200px;
+              border-top-right-radius: 20px;
+              border-bottom-left-radius: 20px;
+              background: rgb(49, 60, 204);
+              background: linear-gradient(90deg, rgb(19, 111, 250) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+            }
+    
+            .buy {
+               width: 200px;
+               border: 1px solid gray;
+               border-top-right-radius: 20px;
+               border-bottom-left-radius: 20px;
+              background: rgb(49, 60, 204);
+              background: linear-gradient(90deg, rgb(19, 111, 250) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+            }
+            :hover {
+    
+              background: rgb(49, 60, 204);
+              background: linear-gradient(90deg, rgba(19, 111, 250, 0) 0%, rgba(42, 26, 184, 0) 35%, rgba(111, 0, 119, 0) 100%);
+              color: gray;
+              border-color: gray;
+            }
+          }
   }
 }
+#Product-description{
+  padding: 100px 0 100px 0;
+  background-color: white;
+}
 
+#Slider-product{
+  .item {
+		background-color: rgba(0, 0, 255, 0.123);
+
+		border-left: 2px solid rgba(68, 0, 255, 0.671);
+		border-right: 2px solid rgba(68, 0, 255, 0.671);
+		border-radius: 30px;
+
+	}
+
+	.owl-item {
+		>div {
+			cursor: pointer;
+			margin: 6% 8%;
+			transition: margin 0.4s ease;
+
+		}
+
+		&:not(.center) {
+			>div {
+				opacity: .5;
+			}
+		}
+
+	}
+
+	.owl-item.center {
+		>div {
+			cursor: auto;
+			margin: 0;
+		}
+	}
+
+	.owl-nav {
+		position: relative;
+
+		.owl-prev {
+			border-radius: 50%;
+			background-color: white;
+			background-image: url("back.png");
+			background-size: cover;
+			width: 80px;
+			height: 80px;
+		}
+
+		.owl-next {
+			border-radius: 50%;
+			background-color: white;
+			position: absolute;
+			background-image: url("next.png");
+			background-size: cover;
+			width: 80px;
+			height: 80px;
+			right: 0;
+
+		}
+	}
+}
 
 @mixin target-ie {
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     @content;
   }
 }
-body {
-background-color: green;
-}
+
 
 
 .ga-vertical-gallery {
