@@ -1,0 +1,59 @@
+#Page-title{
+    height: 200px;
+    .section-title{
+        height: 180px;
+        position: relative;
+        h2{
+         position: absolute;
+         bottom: 50px;
+         font-size: 60px;
+         background: rgb(49, 60, 204);
+         background: linear-gradient(90deg, rgba(19, 111, 250, 0.418) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+
+        }
+    }
+}
+
+
+#Product-section{
+
+    padding: 70px 0;
+    .Accordion{
+        .lorem{
+            label{
+                display: block;
+            }
+        }
+    }
+    .item {
+		background-color: rgba(1, 43, 253, 0.267);
+
+		border-left: 2px solid rgba(68, 0, 255, 0.671);
+		border-right: 2px solid rgba(68, 0, 255, 0.671);
+		border-radius: 30px;
+
+	}
+    .select-title{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .select{
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            select{
+            border: 0;
+            
+             
+            }
+        }
+    }
+}
+
+
+

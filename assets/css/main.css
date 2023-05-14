@@ -2158,4 +2158,50 @@ footer .footer .icons :hover i {
   text-align: center;
   font-size: 30px;
   color: grey;
+}
+
+#Page-title {
+  height: 200px;
+}
+#Page-title .section-title {
+  height: 180px;
+  position: relative;
+}
+#Page-title .section-title h2 {
+  position: absolute;
+  bottom: 50px;
+  font-size: 60px;
+  background: rgb(49, 60, 204);
+  background: linear-gradient(90deg, rgba(19, 111, 250, 0.418) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#Product-section {
+  padding: 70px 0;
+}
+#Product-section .Accordion .lorem label {
+  display: block;
+}
+#Product-section .item {
+  background-color: rgba(1, 43, 253, 0.267);
+  border-left: 2px solid rgba(68, 0, 255, 0.671);
+  border-right: 2px solid rgba(68, 0, 255, 0.671);
+  border-radius: 30px;
+}
+#Product-section .select-title {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#Product-section .select-title .select {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+#Product-section .select-title .select select {
+  border: 0;
 }/*# sourceMappingURL=main.css.map */
