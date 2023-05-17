@@ -108,7 +108,65 @@ function addToWishlist() {
       alert('Bu ürün zaten istek listesine eklenmiş!');
     }
   }
+  const wishlistCountElement = document.getElementById('wishlist-count');
+  const existingCount = parseInt(wishlistCountElement.innerText);
+  if (isNaN(existingCount)) {
+    wishlistCountElement.innerText = '1';
+  } else {
+    wishlistCountElement.innerText = (existingCount + 1).toString();
+  }
 
   // Wishlist sayfasına yönlendirme
   window.location.href = 'wishlist.html';
 }
+
+
+
+$(".Gaming").mouseover(function () {
+  $(".drone-text-second").addClass("active");
+});
+
+$(".Gaming").mouseout(function () {
+  $(".drone-text-second").removeClass("active");
+});
+
+
+
+
+$(".gaming").mouseover(function () {
+  $(".drone-text-seconds").addClass("active");
+});
+
+$(".gaming").mouseout(function () {
+  $(".drone-text-seconds").removeClass("active");
+});
+
+
+$(".pages").mouseover(function () {
+  $(".drone-text").addClass("active");
+});
+
+$(".pages").mouseout(function () {
+  $(".drone-text").removeClass("active");
+});
+
+$(".Pages").mouseover(function () {
+  $(".page-text").addClass("active");
+});
+
+$(".Pages").mouseout(function () {
+  $(".page-text").removeClass("active");
+});
+
+$(".basket").click(function () {
+  $(".basket-menu-exit").addClass("active");
+  document.querySelector('body').style.overflow="hidden"
+  
+});
+$(".exit").click(function (e) {
+  e.stopPropagation()
+  
+  $(".basket-menu-exit").removeClass("active");
+  document.querySelector('body').style.overflow="scroll"
+
+});

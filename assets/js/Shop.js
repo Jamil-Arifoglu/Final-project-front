@@ -59,7 +59,7 @@
 $(document).ready(function () {
     let $btn = $(".close");
     let $lorem = $(".lorem");
-    let isOpened = [true, true, true,true,true  ]; // sadece ilk accordion açık
+    let isOpened = [true, true, true,true,true  ]; 
 
     let styl = {
         padding: "10px",

@@ -22,7 +22,7 @@
   <title>Home Page</title>
 </head>
 
-<body style="background-color: rgb(0,0,0);">
+<body style="background-color: rgb(0, 0, 0);">
 
   <div id="loading">
     <div class="spinner"></div>
@@ -35,9 +35,49 @@
       <div class="row">
         <div class="menu-nav col-4">
           <ul>
-            <li><a href="#">Gaming Accessories</a></li>
-            <li><a href="">Pages</a></li>
-            <li><a href="">Blog</a></li>
+            <li class="gaming">
+              <p>Gaming Accessories</p>
+
+              <div class="drone-text-seconds">
+                <div class="indoor">
+                  <h4>Ryze Tello
+                  </h4>
+                  <hr style="width: 100px;">
+                  <ul>
+                    <li> PowerVision</li>
+                    <li> PowerVision Wizard</li>
+                    <li> Snaptain SP500</li>
+                  </ul>
+                </div>
+                <div class="indoor">
+                  <h5>
+                    Force 1 Scoot LED
+                  </h5>
+                  <hr style="width: 100px;">
+                  <ul>
+                    <li> DJI Mini 2</li>
+                    <li> EMAX TinyHawk</li>
+                    <li> Potensic A20</li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+            <li class="pages">Pages
+              <div class="drone-text">
+                <div class="indoor">
+
+
+                  <ul>
+                    <li> Parrot Mambo</li>
+                    <li>Potensic A20W</li>
+                    <li> Ryze Tello</li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+
           </ul>
         </div>
         <div class="menu-right col-8">
@@ -50,45 +90,143 @@
             </li>
             <li class="my-cart">
               My Cart <br>
-              <b>0.00 <span>USD</span></b>
+              <b class="price">0 <span>USD</span></b>
             </li>
             <li class="basket"><i class="fa-solid fa-cart-shopping"></i> <span class="basket-count">0</span>
             </li>
           </ul>
+
         </div>
 
       </div>
     </div>
   </header>
-  <header class="d-none d-lg-block d-md-block fixed-top second-header">
+  <header class="d-none d-lg-block d-md-none fixed-top second-header">
     <div class="container">
       <div class="row">
         <div class="menu-nav col-4">
           <ul>
-            <li><a href="#">Gaming Accessories</a></li>
-            <li><a href="">Pages</a></li>
-            <li><a href="">Blog</a></li>
+            <li class="Gaming"><a href="#">Gaming Accessories</a>
+              <div class="drone-text-second">
+                <div class="indoor">
+                  <h4>Ryze Tello
+                  </h4>
+                  <hr style="width: 100px;">
+                  <ul>
+                    <li> PowerVision</li>
+                    <li> PowerVision Wizard</li>
+                    <li> Snaptain SP500</li>
+                  </ul>
+                </div>
+                <div class="indoor">
+                  <h5>
+                    Force 1 Scoot LED
+                  </h5>
+                  <hr style="width: 100px;">
+                  <ul>
+                    <li> DJI Mini 2</li>
+                    <li> EMAX TinyHawk</li>
+                    <li> Potensic A20</li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+            <li class="Pages"><a href="#">Pages</a>
+              <div class="page-text ">
+                <div class="indoor">
+                  <ul>
+                    <li> Parrot Mambo</li>
+                    <li>Potensic A20W</li>
+                    <li> Ryze Tello</li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+
           </ul>
         </div>
         <div class="menu-right col-8">
-          <div class="logo"> <a href=""> <img src="assets/images/./logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png" alt=""></a>
+          <div class="logo"> <a href=""> <img src="assets/images/./logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                alt=""></a>
           </div>
           <ul class="icons">
             <li class="account"><a href=""><i class="fa-regular fa-user"></i></a></li>
-            <li class="wish-list"><a href=""><i class="fa-regular fa-heart"><span class="wish-count">0</span></i></a>
+            <li class="wish-list"><a href=""><i class="fa-regular fa-heart"><span id="wishlist-count">0</span></i></a>
             </li>
             <li class="my-cart">
               My Cart <br>
-              <b>0.00 <span>USD</span></b>
+              <b class="price">0 <span>USD</span></b>
             </li>
-            <li class="basket"><i class="fa-solid fa-cart-shopping"></i> <span class="basket-count">0</span>
+            <li class="baske"><i class="fa-solid fa-cart-shopping"></i> <span class="basket-count">0</span>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </header>
+  <header class="header d-lg-none d-md-none d-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="logo">
+            <img src="./assets/images/logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png" alt="">
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="icons">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="account">
+              <a href=""><i class="fa-regular fa-user"></i></a>
+            </div>
+            <div class="wish-list">
+              <a href=""><i class="fa-regular fa-heart"><sup class="wish-count">0</sup></i></a>
+            </div>
+            <div class="basket">
+              <i class="fa-solid fa-cart-shopping"> <sup class="basket-count">0</sup></i>
+            </div>
+            <div class="mobail-menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <hr style="color: white;">
+  <div class="basket-menu-exit">
+
+    <div class="basket-menu">
+      <div class="Basket-first-child">
+        <i class="exit fa-solid fa-xmark"></i>
+        <span><b>MY CART</b></span>
+        <span class="right basket-count">0 <b>ITEM</b></span>
+
+        <hr>
+      </div>
+      <div class="producct">
+
+      </div>
+      <hr>
+      <div class="cart-checkout">
+        <div class="sub-total d-flex   justify-content-around">
+          <h5>SUBTITLE:</h5>
+          <b class="price">0 <sup>USD</sup></b>
+        </div>
+        <br>
+        <button type="button" id="checkout" class="checkout-btn btn-primary" name="checkout" form="cart">Proceed to
+          checkout</button>
+        <br><a href="/cart" class="link-btn" form="cart">View Cart
+
+        </a>
+      </div>
+
+    </div>
+  </div>
+
 
 
 
@@ -180,7 +318,7 @@
                 alt="battle ground" class="product-img__img">
             </div>
 
-            <div class="product-img__item" id="img4">
+            <div class="product-img__item" id="img4" data-target="img4">
               <img src="./assets/images/Products/asa-gx6-back-1000-removebg-preview_258x258.webp" alt="battle ground"
                 class="product-img__img">
             </div>
@@ -265,9 +403,7 @@
                     </div>
 
                     <div class="product-slider__bottom">
-                      <button class="product-slider__cart">
-                        ADD TO CART
-                      </button>
+
 
                       <button class="product-slider__fav js-fav"><span class="heart"></span> ADD TO WISHLIST</button>
                     </div>
@@ -281,7 +417,7 @@
                     <h1 class="product-slider__title">
                       Colossus Ergonomic Gaming Office Chair
                     </h1>
-                    <span class="product-slider__price">$9.999,<sup>99</sup></span>
+                    <span class="product-slider__price">9.999</span>
                     <div class="product-ctr">
                       <div class="product-labels">
                         <div class="product-labels__title">PLAYER'S CHAIR</div>
@@ -324,9 +460,7 @@
                     </div>
 
                     <div class="product-slider__bottom">
-                      <button class="product-slider__cart">
-                        ADD TO CART
-                      </button>
+
 
                       <button class="product-slider__fav js-fav"><span class="heart"></span> ADD TO WISHLIST</button>
                     </div>
@@ -345,17 +479,7 @@
                       <div class="product-labels">
                         <div class="product-labels__title">WRITTING</div>
 
-                        <!-- <div class="product-labels__group">
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type3" checked>
-                            <span class="product-labels__txt"></span>
-                          </label>
 
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type3">
-                            <span class="product-labels__txt">PUBG <sup>BATTLE GROUND</sup></span>
-                          </label>
-                        </div> -->
 
                         <div class="product-labels__title">LASER SIZE</div>
 
@@ -411,9 +535,7 @@
                     </div>
 
                     <div class="product-slider__bottom">
-                      <button class="product-slider__cart">
-                        ADD TO CART
-                      </button>
+
 
                       <button class="product-slider__fav js-fav"><span class="heart"></span> ADD TO WISHLIST</button>
                     </div>
@@ -423,12 +545,12 @@
               <div class="product-slider__item swiper-slide" data-target="img3">
                 <div class="product-slider__card">
 
-                  <div class="product-slider__content">
+                  <div class="product-slider__content" data-id="2">
                     <h1 class="product-slider__title">
                       ASSAULT RIFLE <br>
                       FN SCAR
                     </h1>
-                    <span class="product-slider__price">$9.999,<sup>99</sup></span>
+                    <span class="product-slider__price price">$9.999</span>
                     <div class="product-ctr">
                       <div class="product-labels">
                         <div class="product-labels__title">RIFLE VERSON</div>
@@ -488,9 +610,7 @@
                     </div>
 
                     <div class="product-slider__bottom">
-                      <button class="product-slider__cart">
-                        ADD TO CART
-                      </button>
+
 
                       <button class="product-slider__fav js-fav"><span class="heart"></span> ADD TO WISHLIST</button>
                     </div>
@@ -517,10 +637,13 @@
 
     </div>
     <div class="container">
+      <div class="background-image">
+        <img src="./assets/images/BodyImages/design-circle-3--ss.webp" alt="">
+      </div>
       <div class="row">
         <div class="categories col-lg-3 col-12 col-12">
           <div class="section-title">
-            <h2>Best <br><b>Pro Gaming </b> Categories</h2>
+            <h2>Best <b>Pro Gaming </b> Categories</h2>
           </div>
           <div class="button">
             <button class="gaming  btn-primary"><i class="fa-solid fa-gamepad"></i>Gaming peripherals</button>
@@ -534,99 +657,103 @@
         <div class="product-carusel col-lg-9 col-12 col-12">
           <div class="owl-carousel products-item">
             <div class="item">
-              <a style="text-decoration: none;" href="">
-                <div style="padding: 20px;" class="product-card-image-type">
-
-                  <div style="color: white;" class="carts">
-                    console
-                  </div>
-                 <a href="./Wishlist.html"> <div  style="background-color: black; width: 30px; height: 30px;" class="wishlist-button">
-
-                 </div></a>
-                  <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                  <div style="color: white;" class="product-type">
-                    TYPE:
-                    <p>
-                    </p>
-                  </div>
+              <div style="padding: 20px;" class="product-card-image-type" data-id="1">
+                
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;" class="title">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <a style="text-decoration: none;" href="">
                   <div class="product-images">
                     <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
                   </div>
 
-
-                  <span style="color: white;">458,56 <sup>usd</sup></span>
-
+                </a>
+                  <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
+                  <div class="buyy">
+                    <button type="button" class="buy btn btn-danger">ADD TO CART</button>
+                  </div>
                 </div>
-              </a>
 
             </div>
             <div class="item">
-              <a style="text-decoration: none;" href="">
-                <div style="padding: 20px;" class="product-card-image-type">
-
-                  <div style="color: white;" class="carts">
-                    console
-                  </div>
-                  <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                  <div style="color: white;" class="product-type">
-                    TYPE:
-                    <p>
-                    </p>
-                  </div>
+              <div style="padding: 20px;" class="product-card-image-type" data-id="2">
+                
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;" class="title">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <a style="text-decoration: none;" href="">
                   <div class="product-images">
                     <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
                   </div>
+                </a>
 
-                  <span style="color: white;">458,56 <sup>usd</sup></span>
-
+                  <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
+                  <div class="buyy">
+                    <button type="button" class="buy btn btn-danger">ADD TO CART</button>
+                  </div>
                 </div>
-              </a>
 
             </div>
             <div class="item">
-              <a style="text-decoration: none;" href="">
-                <div style="padding: 20px;" class="product-card-image-type">
 
-                  <div style="color: white;" class="carts">
+              <div style="padding: 20px;" class="product-card-image-type" data-id="3">
+                
+                <div style="color: white;" class="carts">
                     console
                   </div>
-                  <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                  <h4 style="color: white;" class="title">Nintendo Switch Lite - Turquoise</h4>
                   <div style="color: white;" class="product-type">
                     TYPE:
                     <p>
                     </p>
                   </div>
+                  <a style="text-decoration: none;" href="">
                   <div class="product-images">
                     <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
                   </div>
+                </a>
 
-                  <span style="color: white;">458,56 <sup>usd</sup></span>
-
+                  <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
+                  <div class="buyy">
+                    <button type="button" class="buy btn btn-danger">ADD TO CART</button>
+                  </div>
                 </div>
-              </a>
-
             </div>
             <div class="item">
-              <a style="text-decoration: none;" href="">
-                <div style="padding: 20px;" class="product-card-image-type">
+              <div style="padding: 20px;" class="product-card-image-type" data-id="4">
 
-                  <div style="color: white;" class="carts">
-                    console
-                  </div>
-                  <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                  <div style="color: white;" class="product-type">
-                    TYPE:
-                    <p>
-                    </p>
-                  </div>
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;" class="title">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <a style="text-decoration: none;" href="">
                   <div class="product-images">
                     <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
                   </div>
+                </a>
 
-                  <span style="color: white;">458,56 <sup>usd</sup></span>
-
+                <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
+                <div class="buyy">
+                  <button type="button" class="buy btn btn-danger">ADD TO CART</button>
                 </div>
-              </a>
+              </div>
 
             </div>
           </div>
@@ -649,7 +776,7 @@
       </div>
       <div class="poduct-image-title">
         <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  col-12">
+          <div class="col-xl-4 col-lg-4 d-none d-lg-block  col-sm-6  col-12">
             <img style="width: 500px; margin-top: -40px;" src="./assets/images/Products/product-cpu-ss.webp" alt="">
           </div>
           <div class="pc col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
@@ -719,7 +846,7 @@
 
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-sm-6 col-12 ">
+          <div class="col-xl-3 col-lg-4 d-none d-lg-block col-sm-6 col-12 ">
             <img src="./assets/images/Products/full-width-bluthhoth-dd.webp" alt="">
           </div>
 
@@ -775,113 +902,114 @@
 
 
   <section id="Slik-slider">
-  <div class="container">
-    <div class="row">
-      <div class="section-title">
-        <h2>Best <br> <span>Pro Gaming</span> Products</h2>
-        <span style="color: gray;">More powerful hardware not only betters their experiences in games they're currently
-          playing,<br> but it also gives many players access to titles with more demanding specifications.</span>
-      </div>
-      <div class="owl-carousel products-item">
-        <div class="item">
-          <a style="text-decoration: none;" href="">
-            <div style="padding: 20px;" class="product-card-image-type">
-  
-              <div style="color: white;" class="carts">
-                console
-              </div>
-              <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-              <div style="color: white;" class="product-type">
-                TYPE:
-                <p>
-                </p>
-              </div>
-              <div class="product-images">
-                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-              </div>
-  
-  
-              <span style="color: white;">458,56 <sup>usd</sup></span>
-  
-            </div>
-          </a>
-  
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Best <br> <span>Pro Gaming</span> Products</h2>
+          <span style="color: gray;">More powerful hardware not only betters their experiences in games they're
+            currently
+            playing,<br> but it also gives many players access to titles with more demanding specifications.</span>
         </div>
-        <div class="item">
-          <a style="text-decoration: none;" href="">
-            <div style="padding: 20px;" class="product-card-image-type">
-  
-              <div style="color: white;" class="carts">
-                console
+        <div class="owl-carousel products-item">
+          <div class="item">
+            <a style="text-decoration: none;" href="">
+              <div style="padding: 20px;" class="product-card-image-type">
+
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <div class="product-images">
+                  <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                </div>
+
+
+                <span style="color: white;">458,56 <sup>usd</sup></span>
+
               </div>
-              <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-              <div style="color: white;" class="product-type">
-                TYPE:
-                <p>
-                </p>
+            </a>
+
+          </div>
+          <div class="item">
+            <a style="text-decoration: none;" href="">
+              <div style="padding: 20px;" class="product-card-image-type">
+
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <div class="product-images">
+                  <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                </div>
+
+                <span style="color: white;">458,56 <sup>usd</sup></span>
+
               </div>
-              <div class="product-images">
-                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+            </a>
+
+          </div>
+          <div class="item">
+            <a style="text-decoration: none;" href="">
+              <div style="padding: 20px;" class="product-card-image-type">
+
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <div class="product-images">
+                  <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                </div>
+
+                <span style="color: white;">458,56 <sup>usd</sup></span>
+
               </div>
-  
-              <span style="color: white;">458,56 <sup>usd</sup></span>
-  
-            </div>
-          </a>
-  
-        </div>
-        <div class="item">
-          <a style="text-decoration: none;" href="">
-            <div style="padding: 20px;" class="product-card-image-type">
-  
-              <div style="color: white;" class="carts">
-                console
+            </a>
+
+          </div>
+          <div class="item">
+            <a style="text-decoration: none;" href="">
+              <div style="padding: 20px;" class="product-card-image-type">
+
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <div class="product-images">
+                  <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                </div>
+
+                <span style="color: white;">458,56 <sup>usd</sup></span>
+
               </div>
-              <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-              <div style="color: white;" class="product-type">
-                TYPE:
-                <p>
-                </p>
-              </div>
-              <div class="product-images">
-                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-              </div>
-  
-              <span style="color: white;">458,56 <sup>usd</sup></span>
-  
-            </div>
-          </a>
-  
-        </div>
-        <div class="item">
-          <a style="text-decoration: none;" href="">
-            <div style="padding: 20px;" class="product-card-image-type">
-  
-              <div style="color: white;" class="carts">
-                console
-              </div>
-              <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-              <div style="color: white;" class="product-type">
-                TYPE:
-                <p>
-                </p>
-              </div>
-              <div class="product-images">
-                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-              </div>
-  
-              <span style="color: white;">458,56 <sup>usd</sup></span>
-  
-            </div>
-          </a>
-  
+            </a>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </section>
-<footer>
-  <div class="footer">
+  <footer>
+    <div class="footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12">
@@ -891,54 +1019,54 @@
               </div>
               <h4>Reach out & let your <b>mind explore</b></h4>
               <p>Enjoy browsing our page</p>
-            <span >© 2023,Gaming WorkDo,Powered by Shopify</span>
-              
+              <span>© 2023,Gaming WorkDo,Powered by Shopify</span>
+
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
             <div class="navigation">
               <h6>NAVIGATION:</h6>
-            <ul>
-              <li>Search</li>
-              <li>All Products</li>
-              <li> Article Page</li>
-             
-            </ul>
+              <ul>
+                <li>Search</li>
+                <li>All Products</li>
+                <li> Article Page</li>
+
+              </ul>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-           <div class="about">
-            <h6>ABOUT US:</h6>
-            <ul>
-              <li>About Us</li>
-              <li>Contact with us</li>
-              <li>FAQ's</li>
-              <li> Shipping & Delivery</li>
-              <li>Privacy Policy</li>
-            </ul>
-           </div>
+            <div class="about">
+              <h6>ABOUT US:</h6>
+              <ul>
+                <li>About Us</li>
+                <li>Contact with us</li>
+                <li>FAQ's</li>
+                <li> Shipping & Delivery</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-               <h6 style="color: white;">SHARE:</h6>
-               <div class="icons">
-                <div class="youtube margin">
-                  <i class="fa-brands fa-square-youtube"></i>
-                </div>
+            <h6 style="color: white;">SHARE:</h6>
+            <div class="icons">
+              <div class="youtube margin">
+                <i class="fa-brands fa-square-youtube"></i>
+              </div>
               <div class="messenger margin">
                 <i class="fa-brands fa-facebook-messenger"></i>
               </div>
-               <div class="instagram margin">
+              <div class="instagram margin">
                 <i class="fa-brands fa-instagram"></i>
-               </div>
-                <div class="twitter margin">
-                  <i class="fa-brands fa-twitter"></i>
-                </div>
-               </div>
+              </div>
+              <div class="twitter margin">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-  </div>
-</footer>
+    </div>
+  </footer>
 
 
 
@@ -951,7 +1079,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <script src="./assets/js/basket.js"></script>
   <script src="./assets/js/gaming.js"></script>
 </body>
 
