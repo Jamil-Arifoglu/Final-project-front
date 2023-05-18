@@ -88,6 +88,8 @@ $(document).ready(function () {
 });
 
 
+// İstek listesi düğmelerini seçme
+
 
 
 
@@ -103,3 +105,6 @@ $(document).ready(function () {
 //         }
 //     });
 // });
+
+
+

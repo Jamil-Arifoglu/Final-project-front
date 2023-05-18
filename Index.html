@@ -86,7 +86,8 @@
           </div>
           <ul class="icons">
             <li class="account"><a href=""><i class="fa-regular fa-user"></i></a></li>
-            <li class="wish-list"><a href=""><i class="fa-regular fa-heart"><span class="wish-count">0</span></i></a>
+            <li class="wish-list"><a href="./Wishlist.html"><i class="fa-regular fa-heart"><span
+                    class="wishlist-count">0</span></i></a>
             </li>
             <li class="my-cart">
               My Cart <br>
@@ -106,7 +107,7 @@
       <div class="row">
         <div class="menu-nav col-4">
           <ul>
-            <li class="Gaming"><a href="#">Gaming Accessories</a>
+            <li class="Gaming">Gaming Accessories
               <div class="drone-text-second">
                 <div class="indoor">
                   <h4>Ryze Tello
@@ -132,7 +133,7 @@
 
               </div>
             </li>
-            <li class="Pages"><a href="#">Pages</a>
+            <li class="Pages">Pages
               <div class="page-text ">
                 <div class="indoor">
                   <ul>
@@ -153,7 +154,8 @@
           </div>
           <ul class="icons">
             <li class="account"><a href=""><i class="fa-regular fa-user"></i></a></li>
-            <li class="wish-list"><a href=""><i class="fa-regular fa-heart"><span id="wishlist-count">0</span></i></a>
+            <li class="wish-list"><a href="./Wishlist.html"><i class="fa-regular fa-heart"><span
+                    class="wishlist-count">0</span></i></a>
             </li>
             <li class="my-cart">
               My Cart <br>
@@ -178,17 +180,28 @@
           <div class="icons">
             <div class="search">
               <i class="fa-solid fa-magnifying-glass"></i>
+             
             </div>
             <div class="account">
-              <a href=""><i class="fa-regular fa-user"></i></a>
+             <i class="fa-regular fa-user"></i>
+             <div class="account-text ">
+              <div class="indoor">
+                <ul>
+                  <li> Parrot Mambo</li>
+                  <li>Potensic A20W</li>
+                  <li> Ryze Tello</li>
+                </ul>
+              </div>
+
+            </div>
             </div>
             <div class="wish-list">
-              <a href=""><i class="fa-regular fa-heart"><sup class="wish-count">0</sup></i></a>
+              <a href="./Wishlist.html"><i class="fa-regular fa-heart"><sup class="wishlist-count">0</sup></i></a>
             </div>
             <div class="basket">
               <i class="fa-solid fa-cart-shopping"> <sup class="basket-count">0</sup></i>
             </div>
-            <div class="mobail-menu">
+            <div class="mobail-menu bars">
               <i class="fa-solid fa-bars"></i>
             </div>
           </div>
@@ -224,6 +237,48 @@
         </a>
       </div>
 
+    </div>
+  </div>
+  <style>
+    i {
+      transform: rotate(0deg);
+      transition: 1.8s;
+    }
+
+    i.active {
+      transform: rotate(180deg);
+      transition: 1.8s;
+    }
+  </style>
+  <div class="bars-menu-exit">
+
+    <div class="bars-menu">
+      <div class="bars-first-child">
+        <i class="exit fa-solid fa-xmark"></i>
+        <hr>
+      </div>
+      <div class="Accordion">
+        <div class="close">PRICE<i style="margin-left: 350px;" class="fa-solid fa-chevron-down"></i></div>
+        <div class="lorem">
+          <div class="close">PRICE<i style="margin-left: 280px;" class="fa-solid fa-chevron-down"></i></div>
+          <div class="lorem">
+
+          </div>
+
+          <div class="close">PRODUCT TYPE<i style="margin-left: 212px;" class="fa-solid fa-chevron-down"></i></div>
+          <div class="lorem">
+
+          </div>
+
+        </div>
+     
+        <div class="close">PRODUCT TYPE<i style="margin-left: 280px;" class="fa-solid fa-chevron-down"></i></div>
+        <div class="lorem">
+
+        </div>
+        
+
+      </div>
     </div>
   </div>
 
@@ -344,278 +399,270 @@
 
             <div class="product-slider__wrp swiper-wrapper">
               <div class="product-slider__item swiper-slide" data-target="img4">
-                <div class="product-slider__card">
+                <a href="./Detail.html">
+                  <div class="product-slider__card">
 
-                  <div class="product-slider__content">
-                    <h1 class="product-slider__title">
-                      Electrobot Xtreme Gaming Series PC
-                    </h1>
-                    <span class="product-slider__price">$1.299,<sup>99</sup></span>
-                    <div class="product-ctr">
-                      <div class="product-labels">
-                        <div class="product-labels__title">MEMORY SIZE</div>
+                    <div class="product-slider__content">
+                      <h1 class="product-slider__title">
+                        Electrobot Xtreme Gaming Series PC
+                      </h1>
+                      <span class="product-slider__price">$1.299,<sup>99</sup></span>
+                      <div class="product-ctr">
+                        <div class="product-labels">
+                          <div class="product-labels__title">MEMORY SIZE</div>
 
-                        <div class="product-labels__group">
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type5">
-                            <span class="product-labels__txt">128Gb</span>
-                          </label>
+                          <div class="product-labels__group">
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type5">
+                              <span class="product-labels__txt">128Gb</span>
+                            </label>
 
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type5" checked>
-                            <span class="product-labels__txt">256Gb</span>
-                          </label>
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type5" checked>
+                              <span class="product-labels__txt">256Gb</span>
+                            </label>
 
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type5">
-                            <span class="product-labels__txt">500Gb</span>
-                          </label>
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type5">
+                              <span class="product-labels__txt">500Gb</span>
+                            </label>
 
 
+                          </div>
+
+                        </div>
+
+                        <span class="hr-vertical"></span>
+
+                        <div class="product-inf">
+                          <div class="product-inf__percent">
+                            <div class="product-inf__percent-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                <defs>
+                                  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
+                                    <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
+                                  </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300" stroke="#ee9f00"
+                                  stroke-width="4" fill="none" />
+                              </svg>
+                            </div>
+                            <div class="product-inf__percent-txt">
+                              80%
+                            </div>
+                          </div>
+
+                          <span class="product-inf__title">DURABILITY RATE</span>
                         </div>
 
                       </div>
 
-                      <span class="hr-vertical"></span>
 
-                      <div class="product-inf">
-                        <div class="product-inf__percent">
-                          <div class="product-inf__percent-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                              <defs>
-                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                  <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
-                                  <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
-                                </linearGradient>
-                              </defs>
-                              <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300" stroke="#ee9f00"
-                                stroke-width="4" fill="none" />
-                            </svg>
-                          </div>
-                          <div class="product-inf__percent-txt">
-                            80%
-                          </div>
-                        </div>
-
-                        <span class="product-inf__title">DURABILITY RATE</span>
-                      </div>
-
-                    </div>
-
-                    <div class="product-slider__bottom">
-
-
-                      <button class="product-slider__fav js-fav"><span class="heart"></span> ADD TO WISHLIST</button>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="product-slider__item swiper-slide" data-target="img1">
-                <div class="product-slider__card">
+                <a href="./Detail.html">
+                  <div class="product-slider__card">
 
-                  <div class="product-slider__content">
-                    <h1 class="product-slider__title">
-                      Colossus Ergonomic Gaming Office Chair
-                    </h1>
-                    <span class="product-slider__price">9.999</span>
-                    <div class="product-ctr">
-                      <div class="product-labels">
-                        <div class="product-labels__title">PLAYER'S CHAIR</div>
+                    <div class="product-slider__content">
+                      <h1 class="product-slider__title">
+                        Colossus Ergonomic Gaming Office Chair
+                      </h1>
+                      <span class="product-slider__price">9.999</span>
+                      <div class="product-ctr">
+                        <div class="product-labels">
+                          <div class="product-labels__title">PLAYER'S CHAIR</div>
 
-                        <div class="product-labels__group">
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type1" checked>
-                            <span class="product-labels__txt">Player</span>
-                          </label>
+                          <div class="product-labels__group">
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type1" checked>
+                              <span class="product-labels__txt">Player</span>
+                            </label>
 
 
+                          </div>
+
+                        </div>
+
+                        <span class="hr-vertical"></span>
+
+                        <div class="product-inf">
+                          <div class="product-inf__percent">
+                            <div class="product-inf__percent-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                <defs>
+                                  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
+                                    <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
+                                  </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="47" stroke-dasharray="225, 300" stroke="#ee9f00"
+                                  stroke-width="4" fill="none" />
+                              </svg>
+                            </div>
+                            <div class="product-inf__percent-txt">
+                              75%
+                            </div>
+                          </div>
+
+                          <span class="product-inf__title">DURABILITY</span>
                         </div>
 
                       </div>
 
-                      <span class="hr-vertical"></span>
 
-                      <div class="product-inf">
-                        <div class="product-inf__percent">
-                          <div class="product-inf__percent-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                              <defs>
-                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                  <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
-                                  <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
-                                </linearGradient>
-                              </defs>
-                              <circle cx="50" cy="50" r="47" stroke-dasharray="225, 300" stroke="#ee9f00"
-                                stroke-width="4" fill="none" />
-                            </svg>
-                          </div>
-                          <div class="product-inf__percent-txt">
-                            75%
-                          </div>
-                        </div>
-
-                        <span class="product-inf__title">DURABILITY</span>
-                      </div>
-
-                    </div>
-
-                    <div class="product-slider__bottom">
-
-
-                      <button class="product-slider__fav js-fav"><span class="heart"></span> ADD TO WISHLIST</button>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="product-slider__item swiper-slide" data-target="img2">
-                <div class="product-slider__card">
+                <a href="./Detail.html">
+                  <div class="product-slider__card">
 
-                  <div class="product-slider__content">
-                    <h1 class="product-slider__title">
-                      Alien ware Monitor T 46
-                    </h1>
-                    <span class="product-slider__price">$1.699,<sup>99</sup></span>
-                    <div class="product-ctr">
-                      <div class="product-labels">
-                        <div class="product-labels__title">WRITTING</div>
+                    <div class="product-slider__content">
+                      <h1 class="product-slider__title">
+                        Alien ware Monitor T 46
+                      </h1>
+                      <span class="product-slider__price">$1.699,<sup>99</sup></span>
+                      <div class="product-ctr">
+                        <div class="product-labels">
+                          <div class="product-labels__title">WRITTING</div>
 
 
 
-                        <div class="product-labels__title">LASER SIZE</div>
+                          <div class="product-labels__title">LASER SIZE</div>
 
-                        <div class="product-labels__group">
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type2">
-                            <span class="product-labels__txt">S</span>
-                          </label>
+                          <div class="product-labels__group">
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type2">
+                              <span class="product-labels__txt">S</span>
+                            </label>
 
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type2" checked>
-                            <span class="product-labels__txt">M</span>
-                          </label>
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type2" checked>
+                              <span class="product-labels__txt">M</span>
+                            </label>
 
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type2">
-                            <span class="product-labels__txt">L</span>
-                          </label>
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type2">
+                              <span class="product-labels__txt">L</span>
+                            </label>
 
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type2">
-                            <span class="product-labels__txt">XL</span>
-                          </label>
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type2">
+                              <span class="product-labels__txt">XL</span>
+                            </label>
 
+                          </div>
+
+                        </div>
+
+                        <span class="hr-vertical"></span>
+
+                        <div class="product-inf">
+                          <div class="product-inf__percent">
+                            <div class="product-inf__percent-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                <defs>
+                                  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#ee9f00" stop-opacity="0" />
+                                    <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
+                                  </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300" stroke="#ee9f00"
+                                  stroke-width="4" fill="none" />
+                              </svg>
+                            </div>
+                            <div class="product-inf__percent-txt">
+                              80%
+                            </div>
+                          </div>
+
+                          <span class="product-inf__title">DURABILITY</span>
                         </div>
 
                       </div>
 
-                      <span class="hr-vertical"></span>
 
-                      <div class="product-inf">
-                        <div class="product-inf__percent">
-                          <div class="product-inf__percent-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                              <defs>
-                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                  <stop offset="0%" stop-color="#ee9f00" stop-opacity="0" />
-                                  <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
-                                </linearGradient>
-                              </defs>
-                              <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300" stroke="#ee9f00"
-                                stroke-width="4" fill="none" />
-                            </svg>
-                          </div>
-                          <div class="product-inf__percent-txt">
-                            80%
-                          </div>
-                        </div>
-
-                        <span class="product-inf__title">DURABILITY</span>
-                      </div>
-
-                    </div>
-
-                    <div class="product-slider__bottom">
-
-
-                      <button class="product-slider__fav js-fav"><span class="heart"></span> ADD TO WISHLIST</button>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="product-slider__item swiper-slide" data-target="img3">
-                <div class="product-slider__card">
+                <a href="./Detail.html">
+                  <div class="product-slider__card">
 
-                  <div class="product-slider__content" data-id="2">
-                    <h1 class="product-slider__title">
-                      ASSAULT RIFLE <br>
-                      FN SCAR
-                    </h1>
-                    <span class="product-slider__price price">$9.999</span>
-                    <div class="product-ctr">
-                      <div class="product-labels">
-                        <div class="product-labels__title">RIFLE VERSON</div>
+                    <div class="product-slider__content" data-id="2">
+                      <h1 class="product-slider__title">
+                        ASSAULT RIFLE <br>
+                        FN SCAR
+                      </h1>
+                      <span class="product-slider__price price">$9.999</span>
+                      <div class="product-ctr">
+                        <div class="product-labels">
+                          <div class="product-labels__title">RIFLE VERSON</div>
 
-                        <div class="product-labels__group">
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type6" checked>
-                            <span class="product-labels__txt">16S</span>
-                          </label>
+                          <div class="product-labels__group">
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type6" checked>
+                              <span class="product-labels__txt">16S</span>
+                            </label>
 
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type6">
-                            <span class="product-labels__txt">17S</span>
-                          </label>
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type6">
+                              <span class="product-labels__txt">17S</span>
+                            </label>
+                          </div>
+
+                          <div class="product-labels__title">SHOOT TYPE</div>
+
+                          <div class="product-labels__group">
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type7" checked>
+                              <span class="product-labels__txt">Semi-automatic</span>
+                            </label>
+
+                            <label class="product-labels__item">
+                              <input type="radio" class="product-labels__checkbox" name="type7">
+                              <span class="product-labels__txt">automatic</span>
+                            </label>
+                          </div>
+
                         </div>
 
-                        <div class="product-labels__title">SHOOT TYPE</div>
+                        <span class="hr-vertical"></span>
 
-                        <div class="product-labels__group">
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type7" checked>
-                            <span class="product-labels__txt">Semi-automatic</span>
-                          </label>
+                        <div class="product-inf">
+                          <div class="product-inf__percent">
+                            <div class="product-inf__percent-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                <defs>
+                                  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
+                                    <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
+                                  </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300" stroke="#ee9f00"
+                                  stroke-width="4" fill="none" />
+                              </svg>
+                            </div>
+                            <div class="product-inf__percent-txt">
+                              80%
+                            </div>
+                          </div>
 
-                          <label class="product-labels__item">
-                            <input type="radio" class="product-labels__checkbox" name="type7">
-                            <span class="product-labels__txt">automatic</span>
-                          </label>
+                          <span class="product-inf__title">DURABILITY RATE</span>
                         </div>
 
                       </div>
 
-                      <span class="hr-vertical"></span>
 
-                      <div class="product-inf">
-                        <div class="product-inf__percent">
-                          <div class="product-inf__percent-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                              <defs>
-                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                  <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
-                                  <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
-                                </linearGradient>
-                              </defs>
-                              <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300" stroke="#ee9f00"
-                                stroke-width="4" fill="none" />
-                            </svg>
-                          </div>
-                          <div class="product-inf__percent-txt">
-                            80%
-                          </div>
-                        </div>
-
-                        <span class="product-inf__title">DURABILITY RATE</span>
-                      </div>
-
-                    </div>
-
-                    <div class="product-slider__bottom">
-
-
-                      <button class="product-slider__fav js-fav"><span class="heart"></span> ADD TO WISHLIST</button>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -658,7 +705,8 @@
           <div class="owl-carousel products-item">
             <div class="item">
               <div style="padding: 20px;" class="product-card-image-type" data-id="1">
-                
+                <div class="wishlist-button"><i class="fa-regular fa-heart"
+                    style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i></div>
                 <div style="color: white;" class="carts">
                   console
                 </div>
@@ -674,16 +722,17 @@
                   </div>
 
                 </a>
-                  <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
-                  <div class="buyy">
-                    <button type="button" class="buy btn btn-danger">ADD TO CART</button>
-                  </div>
+                <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
+                <div class="buyy">
+                  <button type="button" class="buy btn btn-danger">ADD TO CART</button>
                 </div>
+              </div>
 
             </div>
             <div class="item">
               <div style="padding: 20px;" class="product-card-image-type" data-id="2">
-                
+                <div class="wishlist-button"><i class="fa-regular fa-heart"
+                    style="color: brown; font-size:25px; font-size:20px;"></i></div>
                 <div style="color: white;" class="carts">
                   console
                 </div>
@@ -697,43 +746,45 @@
                   <div class="product-images">
                     <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
                   </div>
-                </a>
 
-                  <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
-                  <div class="buyy">
-                    <button type="button" class="buy btn btn-danger">ADD TO CART</button>
-                  </div>
+                </a>
+                <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
+                <div class="buyy">
+                  <button type="button" class="buy btn btn-danger">ADD TO CART</button>
                 </div>
+              </div>
 
             </div>
             <div class="item">
-
               <div style="padding: 20px;" class="product-card-image-type" data-id="3">
-                
+                <div class="wishlist-button"><i class="fa-regular fa-heart"
+                    style="color: brown; font-size:25px; font-size:20px;"></i></div>
                 <div style="color: white;" class="carts">
-                    console
-                  </div>
-                  <h4 style="color: white;" class="title">Nintendo Switch Lite - Turquoise</h4>
-                  <div style="color: white;" class="product-type">
-                    TYPE:
-                    <p>
-                    </p>
-                  </div>
-                  <a style="text-decoration: none;" href="">
+                  console
+                </div>
+                <h4 style="color: white;" class="title">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <a style="text-decoration: none;" href="">
                   <div class="product-images">
                     <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
                   </div>
-                </a>
 
-                  <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
-                  <div class="buyy">
-                    <button type="button" class="buy btn btn-danger">ADD TO CART</button>
-                  </div>
+                </a>
+                <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
+                <div class="buyy">
+                  <button type="button" class="buy btn btn-danger">ADD TO CART</button>
                 </div>
+              </div>
+
             </div>
             <div class="item">
               <div style="padding: 20px;" class="product-card-image-type" data-id="4">
-
+                <div class="wishlist-button"><i class="fa-regular fa-heart"
+                    style="color: brown; font-size:25px; font-size:20px;"></i></div>
                 <div style="color: white;" class="carts">
                   console
                 </div>
@@ -747,8 +798,8 @@
                   <div class="product-images">
                     <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
                   </div>
-                </a>
 
+                </a>
                 <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
                 <div class="buyy">
                   <button type="button" class="buy btn btn-danger">ADD TO CART</button>
@@ -758,7 +809,7 @@
             </div>
           </div>
         </div>
-        <div class="image col-12">
+        <div class="images col-12">
           <img src="./assets/images/Products/subscribe-img.webp" alt="">
         </div>
       </div>
@@ -914,6 +965,8 @@
           <div class="item">
             <a style="text-decoration: none;" href="">
               <div style="padding: 20px;" class="product-card-image-type">
+                <div class="wishlist-button"><i class="fa-regular fa-heart"
+                    style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i></div>
 
                 <div style="color: white;" class="carts">
                   console
@@ -938,6 +991,33 @@
           <div class="item">
             <a style="text-decoration: none;" href="">
               <div style="padding: 20px;" class="product-card-image-type">
+                <div class="wishlist-button"><i class="fa-regular fa-heart"
+                    style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i></div>
+
+                <div style="color: white;" class="carts">
+                  console
+                </div>
+                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                <div style="color: white;" class="product-type">
+                  TYPE:
+                  <p>
+                  </p>
+                </div>
+                <div class="product-images">
+                  <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                </div>
+
+                <span style="color: white;">458,56 <sup>usd</sup></span>
+
+              </div>
+            </a>
+
+          </div>
+          <div class="item">
+            <a style="text-decoration: none;" href="">
+              <div style="padding: 20px;" class="product-card-image-type">
+                <div class="wishlist-button"><i class="fa-regular fa-heart"
+                    style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i></div>
 
                 <div style="color: white;" class="carts">
                   console
@@ -962,29 +1042,8 @@
             <a style="text-decoration: none;" href="">
               <div style="padding: 20px;" class="product-card-image-type">
 
-                <div style="color: white;" class="carts">
-                  console
-                </div>
-                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                <div style="color: white;" class="product-type">
-                  TYPE:
-                  <p>
-                  </p>
-                </div>
-                <div class="product-images">
-                  <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                </div>
-
-                <span style="color: white;">458,56 <sup>usd</sup></span>
-
-              </div>
-            </a>
-
-          </div>
-          <div class="item">
-            <a style="text-decoration: none;" href="">
-              <div style="padding: 20px;" class="product-card-image-type">
-
+                <div class="wishlist-button"><i class="fa-regular fa-heart"
+                    style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i></div>
                 <div style="color: white;" class="carts">
                   console
                 </div>
@@ -1073,13 +1132,14 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./assets/js/basket.js"></script>
+  <script src="./assets/js/Wishlist.js"></script>
   <script src="./assets/js/gaming.js"></script>
 </body>
 

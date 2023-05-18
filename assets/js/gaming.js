@@ -45,7 +45,7 @@ var swiper = new Swiper(".product-slider", {
 
       var target = $(".product-slider__item").eq(index).data("target");
 
-      console.log(target);
+     
 
       $(".product-img__item").removeClass("active");
       $(".product-img__item#" + target).addClass("active");
@@ -85,41 +85,40 @@ $(window).scroll(function () {
   }
 });
 
-const wishlistBtn = document.querySelector('.wishlist-button');
-wishlistBtn.addEventListener('click', addToWishlist);
+$(document).ready(function() {
+  let $btn = $(".close");
+  let $lorem = $(".lorem");
+  let isOpened = [false, false, false, false, false];
 
-function addToWishlist() {
-  const product = {
-    name: "Nintendo Switch Lite - Turquoise",
-    price: 458.56,
-    image: "./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp"
+  let styl = {
+    padding: "10px",
   };
+  let style = {
+    width: "100%",
+    height: "50px",
+  };
+  $btn.css(style);
+  $lorem.css(styl);
 
-  const existingWishlist = localStorage.getItem('wishlist');
-  if (!existingWishlist) {
-    localStorage.setItem('wishlist', JSON.stringify([product]));
-  } else {
-    const wishlist = JSON.parse(existingWishlist);
-    const productIndex = wishlist.findIndex((item) => item.name === product.name);
-    if (productIndex === -1) {
-      wishlist.push(product);
-      localStorage.setItem('wishlist', JSON.stringify(wishlist));
-    } else {
-      alert('Bu ürün zaten istek listesine eklenmiş!');
+  $btn.each(function(index) {
+    let $icon = $(this).find("i");
+    if (!isOpened[index]) {
+      $icon.removeClass("active");
+      $(this).next().hide();
     }
-  }
-  const wishlistCountElement = document.getElementById('wishlist-count');
-  const existingCount = parseInt(wishlistCountElement.innerText);
-  if (isNaN(existingCount)) {
-    wishlistCountElement.innerText = '1';
-  } else {
-    wishlistCountElement.innerText = (existingCount + 1).toString();
-  }
 
-  // Wishlist sayfasına yönlendirme
-  window.location.href = 'wishlist.html';
-}
-
+    $(this).click(function() {
+      $icon.toggleClass("active");
+      if (isOpened[index]) {
+        $(this).next().slideUp();
+        isOpened[index] = false;
+      } else {
+        $(this).next().slideDown();
+        isOpened[index] = true;
+      }
+    });
+  });
+});
 
 
 $(".Gaming").mouseover(function () {
@@ -169,4 +168,27 @@ $(".exit").click(function (e) {
   $(".basket-menu-exit").removeClass("active");
   document.querySelector('body').style.overflow="scroll"
 
+});
+
+
+$(".bars").click(function () {
+  $(".bars-menu-exit").addClass("active");
+  document.querySelector('body').style.overflow="hidden"
+  
+});
+$(".exit").click(function (e) {
+  e.stopPropagation()
+  
+  $(".bars-menu-exit").removeClass("active");
+  document.querySelector('body').style.overflow="scroll"
+
+});
+
+
+$(".account").mouseover(function () {
+  $(".account-text").addClass("active");
+});
+
+$(".account").mouseout(function () {
+  $(".account-text").removeClass("active");
 });
