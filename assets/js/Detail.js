@@ -29,7 +29,7 @@ jQuery(document).ready( function($) {
       verticalSwiping: true,
       centerMode: false
     });
-    if($(window).width()>1000){
+    if($(window).width()>1180){
     $('.slider-nav').slick({
       slidesToShow: 5,
       arrows: false,
@@ -131,11 +131,11 @@ $owl.owlCarousel({
       items: 2,
       margin: 3,
     },
-    820: {
+    1000: {
       items: 2,
       margin: 2,
     },
-    1000: {
+    1180: {
       items: 4,
       margin: 3,
     },

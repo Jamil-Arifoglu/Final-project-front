@@ -230,6 +230,10 @@
     margin-left: 5px;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 header {
   height: 80px;
   padding: 30px 0 0 0;
@@ -312,6 +316,8 @@ header .menu-right ul .basket .basket-count {
 .basket-menu-exit .basket-menu .producct {
   height: 450px;
   overflow: auto;
+  margin-left: 13px;
+  margin-top: 15px;
 }
 .basket-menu-exit .basket-menu .cart-checkout {
   text-align: center;
@@ -736,14 +742,6 @@ header .menu-right ul .basket .basket-count {
   top: 0;
   z-index: -1;
 }
-@media only screen and (max-width: 415px) {
-  .body-images .right-color {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
-}
 .body-images .music-icon {
   position: absolute;
   right: 16%;
@@ -788,41 +786,46 @@ header .menu-right ul .basket .basket-count {
 .body-images .information-text span {
   padding: 0 0 30px 0;
 }
-.body-images .information-text .show-buttom-first {
+.body-images .information-text .buttons {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+.body-images .information-text .buttons .show-buttom-first {
   display: inline;
 }
-.body-images .information-text .show-buttom-first .show-products {
-  margin-top: 50px;
+.body-images .information-text .buttons .show-buttom-first .show-products {
+  margin-top: 0px;
   border: 2px solid white;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  width: 230px;
+  width: 180px;
   height: 50px;
   margin-right: 10px;
   background: rgb(49, 60, 204);
   background: linear-gradient(90deg, rgba(19, 111, 250, 0.418) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
   color: beige;
 }
-.body-images .information-text .show-buttom-first :hover {
+.body-images .information-text .buttons .show-buttom-first :hover {
   background: rgb(49, 60, 204);
   background: linear-gradient(90deg, rgba(19, 111, 250, 0) 0%, rgba(42, 26, 184, 0) 35%, rgba(111, 0, 119, 0) 100%);
   color: gray;
   border-color: gray;
 }
-.body-images .information-text .show-buttom-seccound {
+.body-images .information-text .buttons .show-buttom-seccound {
   display: inline;
 }
-.body-images .information-text .show-buttom-seccound .show-collections {
+.body-images .information-text .buttons .show-buttom-seccound .show-collections {
   border: 2px solid gray;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  width: 230px;
+  width: 180px;
   height: 50px;
   background: rgb(49, 60, 204);
   background: linear-gradient(90deg, rgba(19, 111, 250, 0) 0%, rgba(42, 26, 184, 0) 35%, rgba(111, 0, 119, 0) 100%);
   color: gray;
 }
-.body-images .information-text .show-buttom-seccound :hover {
+.body-images .information-text .buttons .show-buttom-seccound :hover {
   background: rgb(49, 60, 204);
   background: linear-gradient(90deg, rgba(19, 111, 250, 0.418) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
   color: beige;
@@ -859,14 +862,6 @@ header .menu-right ul .basket .basket-count {
   margin-top: 10px;
   font-size: 16px;
 }
-@media only screen and (max-width: 414px) {
-  .body-images .information-text .featured-text .text {
-    height: 30px;
-  }
-  .body-images .information-text .featured-text .text p {
-    font-size: 10px;
-  }
-}
 
 @media only screen and (max-width: 415px) {
   .body-images .right-image {
@@ -880,7 +875,7 @@ header .menu-right ul .basket .basket-count {
     width: 350px;
   }
   .body-images .right-color {
-    right: 5%;
+    right: -3%;
   }
   .body-images .music-icon {
     right: 10%;
@@ -904,41 +899,67 @@ header .menu-right ul .basket .basket-count {
     margin-left: 10%;
     height: auto;
     width: 90%;
-    text-align: center;
+    text-align: none;
   }
   .body-images .information-text h1 {
     font-size: 45px;
   }
-  .body-images .information-text .show-buttom-first,
+  .body-images .information-text .show-buttom-first {
+    display: inline;
+  }
+  .body-images .information-text .show-buttom-first .show-products {
+    margin-top: 50px;
+    border: 2px solid white;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 230px;
+    height: 50px;
+    margin-right: 10px;
+    background: rgb(49, 60, 204);
+    background: linear-gradient(90deg, rgba(19, 111, 250, 0.418) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+    color: beige;
+  }
+  .body-images .information-text .show-buttom-first :hover {
+    background: rgb(49, 60, 204);
+    background: linear-gradient(90deg, rgba(19, 111, 250, 0) 0%, rgba(42, 26, 184, 0) 35%, rgba(111, 0, 119, 0) 100%);
+    color: gray;
+    border-color: gray;
+  }
   .body-images .information-text .show-buttom-seccound {
     display: block;
-    margin: 10px auto;
-    width: 90%;
-    height: 40px;
-    border-radius: 20px;
-    font-size: 14px;
   }
-  .body-images .information-text .show-buttom-first .show-products,
   .body-images .information-text .show-buttom-seccound .show-collections {
-    width: 45%;
-    margin: 5px;
+    border: 2px solid gray;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 230px;
+    height: 50px;
+    background: rgb(49, 60, 204);
+    background: linear-gradient(90deg, rgba(19, 111, 250, 0) 0%, rgba(42, 26, 184, 0) 35%, rgba(111, 0, 119, 0) 100%);
+    color: gray;
+  }
+  .body-images .information-text .show-buttom-seccound :hover {
+    background: rgb(49, 60, 204);
+    background: linear-gradient(90deg, rgba(19, 111, 250, 0.418) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+    color: beige;
+    border-color: beige;
   }
   .body-images .information-text .featured-text {
-    height: auto;
-    width: 90%;
+    height: 70px;
+    width: 80%;
     margin: 20px auto;
     padding: 20px;
-    font-size: 16px;
+    font-size: 10px;
     text-align: left;
   }
   .body-images .information-text .featured-text span {
     width: 80px;
     height: 28px;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 28px;
   }
   .body-images .information-text .featured-text p {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 .bg {
@@ -2429,6 +2450,17 @@ footer .footer .icons :hover i {
 #Detalik-section {
   padding: 100px 0 100px 0;
 }
+#Detalik-section .ssc {
+  border: 3px solid blue;
+  border-radius: 20px;
+  border-top: 0px;
+}
+#Detalik-section .ssc .eedd {
+  border-radius: 20px;
+}
+#Detalik-section .nav-container {
+  margin-right: 10px;
+}
 #Detalik-section .product-information {
   padding: 0 120px 0 0;
 }
@@ -2560,6 +2592,22 @@ footer .footer .icons :hover i {
   right: 0;
 }
 
+#Peoduct-tab {
+  margin-top: 100px;
+}
+#Peoduct-tab .pc .item {
+  border: 2px solid rgb(43, 30, 55);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(25, 43, 70, 0.341);
+}
+#Peoduct-tab .pc .item .product-card-image-type h4 {
+  color: rgb(185, 182, 182);
+}
+#Peoduct-tab .pc .item .product-card-image-type p {
+  color: gray;
+}
+
 .ga-vertical-gallery .services-slider {
   display: flex;
 }
@@ -2626,18 +2674,21 @@ footer .footer .icons :hover i {
     justify-content: flex-start;
   }
 }
-.ga-vertical-gallery .slick-next, .ga-vertical-gallery .slick-prev {
+.ga-vertical-gallery .slick-next,
+.ga-vertical-gallery .slick-prev {
   position: relative;
   top: unset;
   color: #fc7a22;
   height: unset;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .ga-vertical-gallery .slick-next, .ga-vertical-gallery .slick-prev {
+  .ga-vertical-gallery .slick-next,
+  .ga-vertical-gallery .slick-prev {
     top: 0px;
   }
 }
-.ga-vertical-gallery .slick-next:before, .ga-vertical-gallery .slick-prev:before {
+.ga-vertical-gallery .slick-next:before,
+.ga-vertical-gallery .slick-prev:before {
   color: transparent;
 }
 .ga-vertical-gallery .slick-next {
@@ -2659,6 +2710,130 @@ footer .footer .icons :hover i {
   }
 }
 
+@media only screen and (min-width: 415px) and (max-width: 820px) {
+  #Product-description {
+    padding: 100px 0 100px 0;
+    background-color: white;
+  }
+  #Product-description img {
+    width: 100%;
+  }
+  #Detalik-section {
+    padding: 100px 0 100px 0;
+  }
+  #Detalik-section .ssc {
+    border: 3px solid blue;
+    border-radius: 20px;
+    border-top: 0px;
+  }
+  #Detalik-section .ssc .eedd {
+    width: 303px;
+    height: 305px;
+    border-radius: 20px;
+  }
+  #Detalik-section .nav-container {
+    height: 300px;
+    margin-right: 10px;
+  }
+  #Detalik-section .product-information {
+    padding: 0 120px 0 0;
+  }
+  #Detalik-section .product-information .category-wishlist .category {
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background: rgb(49, 60, 204);
+    background: linear-gradient(90deg, rgba(19, 111, 250, 0.418) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+  }
+  #Detalik-section .product-information .category-wishlist .category span {
+    color: #ffffff;
+  }
+  #Detalik-section .product-information .category-wishlist a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 10px;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  #Detalik-section .product-information .category-wishlist a i {
+    margin-right: 10px;
+  }
+  #Detalik-section .product-information .name-description .icons-star {
+    color: white;
+    width: 100px;
+  }
+  #Detalik-section .product-information .name-description .icons-star i {
+    font-size: 10px;
+  }
+  #Detalik-section .product-information .name-description .name {
+    color: white;
+  }
+  #Detalik-section .product-information .name-description .name h1 {
+    font-size: 20px;
+  }
+  #Detalik-section .product-information .name-description .sku {
+    color: white;
+  }
+  #Detalik-section .product-information .name-description .sku ul {
+    padding: 0;
+  }
+  #Detalik-section .product-information .name-description .sku ul li {
+    list-style: none;
+  }
+  #Detalik-section .product-information .name-description .description {
+    color: white;
+  }
+  #Detalik-section .product-information .product-select {
+    margin-top: 50px;
+  }
+  #Detalik-section .product-information .product-select select {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 500px;
+    height: 40px;
+    background-color: #000;
+    color: gray;
+  }
+  #Detalik-section .product-information .price-quantity {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #Detalik-section .product-information .price-quantity .price {
+    color: white;
+  }
+  #Detalik-section .product-information .add-buy .add {
+    margin-right: 20px;
+    width: 200px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgb(49, 60, 204);
+    background: linear-gradient(90deg, rgb(19, 111, 250) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+  }
+  #Detalik-section .product-information .add-buy .buy {
+    width: 200px;
+    border: 1px solid gray;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgb(49, 60, 204);
+    background: linear-gradient(90deg, rgb(19, 111, 250) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+  }
+  #Detalik-section .product-information .add-buy :hover {
+    background: rgb(49, 60, 204);
+    background: linear-gradient(90deg, rgba(19, 111, 250, 0) 0%, rgba(42, 26, 184, 0) 35%, rgba(111, 0, 119, 0) 100%);
+    color: gray;
+    border-color: gray;
+  }
+  #Peoduct-tab {
+    margin-top: 100px;
+  }
+  #Peoduct-tab .right-image img {
+    width: 400px;
+  }
+}
 #Wishlist-Name .name h1 {
   background: rgb(26, 34, 150);
   background: linear-gradient(75deg, rgb(46, 16, 85) 100%);
@@ -2679,7 +2854,7 @@ footer .footer .icons :hover i {
   height: 100%;
 }
 #Wishlist #wishlist-container .wishlist-product {
-  width: 300px;
+  width: 290px;
   height: 400px;
   background-color: rgba(8, 100, 206, 0.178);
   border-left: 2px solid rgba(68, 0, 255, 0.671);
@@ -2705,6 +2880,34 @@ footer .footer .icons :hover i {
   border-color: gray;
 }
 
+@media only screen and (max-width: 415px) {
+  #Wishlist-Name .description {
+    width: 400px;
+  }
+  #Wishlist-Name .description p {
+    font-size: 15px;
+    color: gray;
+  }
+  #Wishlist {
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    height: 100%;
+  }
+  #Wishlist #wishlist-container .wishlist-product {
+    margin-bottom: 20px;
+    width: 390px;
+    height: 340px;
+    padding: 20px;
+  }
+  #Wishlist #wishlist-container .wishlist-product img {
+    width: 200px;
+  }
+  #Wishlist #wishlist-container .wishlist-product button {
+    border-top-right-radius: 20px;
+    width: 150px;
+  }
+}
 #Contact-description {
   margin-top: 100px;
   margin-bottom: 60px;
@@ -2789,6 +2992,86 @@ footer .footer .icons :hover i {
   height: 50px;
 }
 
+@media only screen and (max-width: 415px) {
+  #Contact-address-form {
+    background-color: rgb(255, 255, 255);
+    height: 1500px;
+    padding: 100px 0 0 0;
+    position: relative;
+  }
+  #Contact-address-form li {
+    list-style: none;
+    color: gray;
+  }
+  #Contact-address-form h5 {
+    color: gray;
+  }
+  #Contact-address-form .contact-title-form {
+    position: static;
+    top: -150px;
+    width: 390px;
+    z-index: 0;
+  }
+  #Contact-address-form .contact-title-form .contact-title {
+    margin-bottom: 50px;
+  }
+  #Contact-address-form .contact-title-form .contact-title h1 {
+    background: rgb(50, 15, 114);
+    background: linear-gradient(90deg, rgb(52, 113, 245) 0%, rgb(25, 41, 190) 35%, rgb(69, 10, 73) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #Contact-address-form .contact-title-form .contact-form {
+    height: 850px;
+    padding: 0px 20px;
+    border: 2px solid #7b35c8;
+    background: #fff;
+  }
+  #Contact-address-form .contact-title-form .contact-form .form-group {
+    margin-top: 30px;
+  }
+  #Contact-address-form .contact-title-form .contact-form .form-group label {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  #Contact-address-form .contact-title-form .contact-form .form-group .form-control {
+    position: relative;
+    border: 1px solid gray;
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 13px;
+    line-height: 1;
+    border-radius: 0px 20px 0px 20px;
+    color: gray;
+  }
+  #Contact-address-form .contact-title-form .contact-form .form-group textarea {
+    resize: none;
+  }
+  #Contact-address-form .btn {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 30px;
+    background: rgb(49, 60, 204);
+    background: linear-gradient(90deg, rgb(19, 111, 250) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+    color: white;
+    width: 200px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 820px) {
+  #Contact-description .contact-desc .description p {
+    color: white;
+    width: 300px;
+  }
+  #Contact-address-form .contact-title-form {
+    position: absolute;
+    top: -250px;
+    width: 380px;
+    z-index: 0;
+  }
+}
 #Collections {
   background-color: white;
 }

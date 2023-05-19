@@ -49,11 +49,11 @@ buttons.forEach((button) => {
 function GetProductDatas(product) {
   let parent = product.parentElement.parentElement;
   let id = parent.getAttribute("data-id");
-  let price = parent.querySelector(".prices").innerText;
   let title = parent.querySelector(".title").innerText;
+  let price = parent.querySelector(".prices").innerText;
 
   let src = parent.querySelector("img").src;
-  let result = { id, price, title, src, count: 1 };
+  let result = { id,title, price, src, count: 1 };
   return result;
 }
 
@@ -75,6 +75,8 @@ function ShowTotalPrice(basket) {
   })
 }
 
+
+
 function AddToBasket(product) {
   let id = product.id;
   let basketItem = basketHTML.querySelector(`[data-id="${id}"]`);
@@ -87,48 +89,56 @@ function AddToBasket(product) {
   } else {
     let div = document.createElement("div");
     let image = document.createElement("img");
-    let price = document.createElement("span");
-    let count = document.createElement("span");
+    let contentDiv = document.createElement("div"); 
     let title = document.createElement("h5");
-    let closeBtn = document.createElement("button");
+    let price = document.createElement("span");
+    let count = document.createElement("p");
+    let closeBtn = document.createElement("i");
 
     closeBtn.className = "btn btn-danger";
-    closeBtn.innerText = "X";
+    closeBtn.className = "fa-regular fa-trash-can";
     closeBtn.style.position = "absolute";
     closeBtn.style.right = "10px";
-    div.className = "basket-item col-lg-2";
+    div.className = "basket-item";
     div.style.position = "relative";
     div.setAttribute("data-id", product.id);
     div.setAttribute("data-count", 1);
     div.style.width = "398px";
     div.style.marginBottom = "10px";
-    title.innerText = product.title;
+    div.style.alignItems = 'center';
+    div.style.padding = '20px 0';
+    div.style.border = '1px solid grey';
+    div.style.display='flex'
+
     image.src = product.src;
     image.style.width = "100px";
+    title.innerText = product.title;
     price.innerText = product.price;
     count.innerText = 1;
     count.className = "count";
-    div.append(image, price, title, count, closeBtn);
+
+    contentDiv.append(title, price, count); 
+    div.append(image, contentDiv, closeBtn); 
     basketHTML.append(div);
+    
     closeBtn.addEventListener("click", function () {
       let basket = JSON.parse(localStorage.getItem("basket"));
       if (!basket) {
         localStorage.setItem("basket", JSON.stringify([]));
         basket = JSON.parse(localStorage.getItem("basket"));
       }
-      let id = this.parentElement.getAttribute("data-Id");
+      let id = this.parentElement.getAttribute("data-id");
       let index = basket.findIndex((element) => {
         return element.id == id;
       });
       delete basket[index];
-basket = basket.filter(Boolean);
-ShowProductCount(basket);
-      
+      basket = basket.filter(Boolean);
+      ShowProductCount(basket);
+
       let basketStr = JSON.stringify(basket);
       localStorage.setItem("basket", basketStr);
       this.parentElement.remove();
       ShowTotalPrice(basket);
-     
     });
   }
 }
